@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 // import logo from "./logo.svg";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/layout/Navbar";
 import ProductList from "./components/ProductList";
 import Cart from "./components/Cart";
 import Details from "./components/Details";
