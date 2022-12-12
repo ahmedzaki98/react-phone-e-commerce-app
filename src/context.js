@@ -15,7 +15,7 @@ export default class ProductProvider extends Component {
   setProducts = () => {
     let tempProducts = [];
     storeProducts.forEach((item) => {
-      const singleItem = {...item};
+      const singleItem = { ...item };
       tempProducts = [...tempProducts, singleItem];
     });
     this.setState(() => {
@@ -23,12 +23,21 @@ export default class ProductProvider extends Component {
     });
   };
 
-  handleDetail = () => {
-    console.log("hello form detail");
+  getId = (id) => {
+    const productId = this.state.products.find((item) => item.id === id);
+    return productId;
   };
 
-  addToCart = () => {
-    console.log("hello form Cart");
+  //change detailProduct with the specific product we choose
+  handleDetail = (id) => {
+    const productDetail = this.getId(id);
+    this.setState(() => {
+      return { detailProduct: productDetail };
+    });
+  };
+
+  addToCart = (id) => {
+    console.log(`hello ${id}`);
   };
 
   render() {
