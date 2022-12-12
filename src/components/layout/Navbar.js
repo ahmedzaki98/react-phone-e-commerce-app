@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import logo from './logo.svg';
+import logo from "./Logo.png";
 import styled from "styled-components";
-import {ButtonContainer} from '../ui/Button';
-
+import { ButtonContainer } from "../ui/Button";
 
 const NavWrapper = styled.nav`
   background: var(--mainBlue);
@@ -12,7 +11,10 @@ const NavWrapper = styled.nav`
     font-size: 1.3rem;
     text-transform: capitalize;
   }
-
+  img {
+    width: 5.5rem;
+    hight: 5.5rem;
+  }
 `;
 
 const Navbar = () => {
@@ -33,7 +35,7 @@ const Navbar = () => {
           <span className="mr-2">
             <i className="fas fa-cart-plus"></i>
           </span>
-          <span>my cart</span>  
+          <span>my cart</span>
         </ButtonContainer>
       </Link>
     </NavWrapper>
