@@ -5,7 +5,7 @@ https://www.iconfinder.com/Makoto_msk */
 
 export const storeProducts = [
   {
-    id: 9,
+    id: 1,
     title: "iPhone 14 Pro Max - Space Black",
     img: "img/product-9.png",
     price: 2000,
@@ -25,7 +25,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 10,
+    id: 2,
     title: "iPhone 13 Pro - Gold",
     img: "img/product-10.png",
     price: 1000,
@@ -41,7 +41,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 11,
+    id: 3,
     title: "Galaxy S22 Ultra - Phantom White",
     img: "img/product-11.png",
     price: 1500,
@@ -57,7 +57,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 12,
+    id: 4,
     title: "Galaxy S22 - Purple",
     img: "img/product-12.png",
     price: 900,
@@ -73,7 +73,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 1,
+    id: 5,
     title: "Google Pixel - Black",
     img: "img/product-1.png",
     price: 10,
@@ -85,7 +85,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 2,
+    id: 6,
     title: "Samsung S7",
     img: "img/product-2.png",
     price: 16,
@@ -97,7 +97,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 3,
+    id: 7,
     title: "HTC 10 - Black",
     img: "img/product-3.png",
     price: 8,
@@ -109,7 +109,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 4,
+    id: 8,
     title: "HTC 10 - White",
     img: "img/product-4.png",
     price: 18,
@@ -121,7 +121,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 5,
+    id: 9,
     title: "HTC Desire 626s",
     img: "img/product-5.png",
     price: 24,
@@ -133,7 +133,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 6,
+    id: 10,
     title: "Vintage Iphone",
     img: "img/product-6.png",
     price: 17,
@@ -145,7 +145,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 7,
+    id: 11,
     title: "Iphone 7",
     img: "img/product-7.png",
     price: 30,
@@ -157,7 +157,7 @@ export const storeProducts = [
     total: 0
   },
   {
-    id: 8,
+    id: 12,
     title: "Smashed Iphone",
     img: "img/product-8.png",
     price: 2,
@@ -172,13 +172,21 @@ export const storeProducts = [
 
 export const detailProduct = {
   id: 1,
-  title: "Google Pixel - Black",
-  img: "img/product-1.png",
-  price: 10,
-  company: "google",
-  info:
-    "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
-  inCart: false,
-  count: 0,
-  total: 0
+    title: "iPhone 14 Pro Max - Space Black",
+    img: "img/product-9.png",
+    price: 2000,
+    company: "Apple",
+    info: `6.7-inch Super Retina XDR display features Always On and ProMotion
+    Dynamic Island, a magical new way to interact with iPhone
+    48MP main camera with up to 4 times greater resolution
+    Cinematic mode now in Dolby Vision in 4K resolution at up to 30fps
+    Motion mode for smooth, steady, handheld videos
+    Vital Safety Features - Satellite emergency function and collision detection
+    All-day battery life and up to 29 hours of video playback
+    A16 Bionic chip, the ultimate smartphone chip. Ultra-fast cellular network, 5G network
+    Industry leading durability features with ceramic shield and water resistance
+    `,
+    inCart: false,
+    count: 0,
+    total: 0
 };
