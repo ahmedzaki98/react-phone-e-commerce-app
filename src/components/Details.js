@@ -34,40 +34,49 @@ const Details = () => {
           value.detailProduct;
         return (
           <div className="container py-5">
+            {/* title */}
             <div className="row">
               <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
                 <h1>{title}</h1>
               </div>
             </div>
+            {/* end of title */}
             <div className="row">
-              <div className="col-10 mx-auto col-md-16 my-3">
-                <img className="img-fluid" alt="product" src={img}></img>
+              <div className="col-10 mx-auto col-md-6 my-3">
+                <img src={img} className="img-fluid" alt="" />
               </div>
-              <div className="col-10 mx-auto col-md-16 my-3 text-capitalize">
-                <h2>model: {title}</h2>
+              {/* prdoduct info */}
+              <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
+                <h1>model : {title}</h1>
                 <h4 className="text-title text-uppercase text-muted mt-3 mb-2">
-                  made by: <span className="text-uppercase"> {company}</span>
+                  made by : <span className="text-uppercase">{company}</span>
                 </h4>
                 <h4 className="text-blue">
                   <strong>
-                    price : <span>$</span> {price}{" "}
+                    price : <span>$</span>
+                    {price}
                   </strong>
                 </h4>
                 <p className="text-capitalize font-weight-bold mt-3 mb-0">
-                  Product info:
+                  some info about product :
                 </p>
-                <p className="text-muted lead"> {info} </p>
+                <p className="text-muted lead">{info}</p>
+                {/* buttons */}
                 <div>
                   <Link to="/">
                     <ButtonContainer>
-                      <i
-                        className="fas fa-reply"
-                        style={{ transition: "all 0.2s ease-in-out" }}
-                      ></i>
+                      <i className="fas fa-reply" style={{ transition: "all 0.2s ease-in-out" }}></i>
                       <span>back to products</span>
                     </ButtonContainer>
                   </Link>
-                  <ButtonContainer disabled={inCart ? true : false}>
+                  <ButtonContainer
+                    cart
+                    disabled={inCart ? true : false}
+                    onClick={() => {
+                      value.addToCart(id);
+                      value.openModal(id);
+                    }}
+                  >
                     {inCartCheck(inCart)}
                   </ButtonContainer>
                 </div>
