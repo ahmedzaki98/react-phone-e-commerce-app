@@ -6,6 +6,8 @@ import PropTypes from "prop-types";
 
 const ProductWrapper = styled.div`
 .card{
+  width: 100%;
+  height: 20rem;
   border-color: transparent;
   border-radius: .7rem;
   transition: all 0.5s linear;
@@ -36,6 +38,9 @@ const ProductWrapper = styled.div`
 }
 .card-img-top{
   transition: 1s all;
+  width: 100%;
+  max-height: 10rem;
+  object-fit: scale-down;
 }
 .img-container:hover .card-img-top{
   transform: scale(1.2);
