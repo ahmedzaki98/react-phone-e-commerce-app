@@ -7,6 +7,7 @@ export default class ProductProvider extends Component {
   state = {
     products: [],
     detailProduct: detailProduct,
+    cart: [],
   };
   componentDidMount() {
     this.setProducts();
@@ -37,7 +38,24 @@ export default class ProductProvider extends Component {
   };
 
   addToCart = (id) => {
-    console.log(`hello ${id}`);
+    let tempProducts = [...this.state.products];
+    const index = tempProducts.indexOf(this.getId(id));
+    const cartProduct = tempProducts[index];
+    cartProduct.inCart = true;
+    cartProduct.count = 1;
+    const price = cartProduct.price;
+    cartProduct.total = price;
+    this.setState(
+      () => {
+        return {
+          products: tempProducts,
+          cart: [...this.state.cart,cartProduct],
+        };
+      },
+      () => {
+        console.log(this.state);
+      }
+    );
   };
 
   render() {
