@@ -24,3 +24,18 @@ body {
 .text-bright {
   color: var(--lightBlue);
 }
+
+.text-yellow{
+  color: var(--mainYellow);
+  border-color: #fdbd01 !important;
+}
+
+.text-grid {
+  background: -webkit-linear-gradient(
+    315deg,
+    #ffa400,
+    #fdbd01 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
