@@ -17,9 +17,9 @@ const Details = () => {
       );
     } else {
       return (
-        <div>
+        <div className="text-yellow">
           <i
-            class="fa-solid fa-cart-shopping"
+            className="fa-solid fa-cart-shopping"
             style={{ transition: "all 0.2s ease-in-out" }}
           ></i>
           <span>in cart</span>
@@ -65,12 +65,13 @@ const Details = () => {
                 <div>
                   <Link to="/">
                     <ButtonContainer>
-                      <i className="fas fa-reply" style={{ transition: "all 0.2s ease-in-out" }}></i>
+                      <span>
+                        <i className="fas fa-reply"></i>
+                      </span>
                       <span>back to products</span>
                     </ButtonContainer>
                   </Link>
                   <ButtonContainer
-                    cart
                     disabled={inCart ? true : false}
                     onClick={() => {
                       value.addToCart(id);
