@@ -22,7 +22,7 @@ const SpanWrapper = styled.span`
     max-width:0.9rem;
     margin-left: -1rem;
     margin-right: 1rem;
-    color: var(--lightBlue);
+    color: var(--mainYellow);
     font-size: 1.3rem;
   }
   .badge:after {
