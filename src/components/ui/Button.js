@@ -4,7 +4,7 @@ export const ButtonContainer = styled.button`
   font-size: 1.3rem;
   background: white;
   border: 0.05rem solid var(--lightBlue);
-  border-radius: 1.5rem;
+  border-radius: 0.8rem;
   color: var(--lightBlue);
   padding: 0.25rem 0.7rem;
   cursor: pointer;
@@ -16,6 +16,7 @@ export const ButtonContainer = styled.button`
   }
   &:hover {
     color: var(--mainYellow);
+    border-color: var(--mainYellow);
   }
 
   &:focus {
