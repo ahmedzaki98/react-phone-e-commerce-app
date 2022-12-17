@@ -16,7 +16,7 @@ const ModalContainer = styled.div`
   background: rgba(0, 0, 0, 0.3);
 
   #modal {
-    background: var(--mainWhite);
+    background: #fff3f3;
     padding: 1rem;
     margin: 2rem auto;
     max-width: 40rem;
