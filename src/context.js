@@ -10,6 +10,9 @@ export default class ProductProvider extends Component {
     cart: [],
     modalProduct: detailProduct,
     modalOpen: false,
+    cartSubTotal: 0,
+    cartTax: 0,
+    cartTotal: 0,
   };
   componentDidMount() {
     this.setProducts();
@@ -66,10 +69,24 @@ export default class ProductProvider extends Component {
 
   closeModal = () => {
     this.setState(() => {
-      return {
-        modalOpen: false,
-      };
+      return { modalOpen: false };
     });
+  };
+
+  increment = (id) => {
+    console.log("increment");
+  };
+
+  decrement = (id) => {
+    console.log("decrement");
+  };
+
+  removeItem = (id) => {
+    console.log("remove item");
+  };
+
+  clearCart = () => {
+    console.log("clear");
   };
 
   render() {
@@ -81,7 +98,11 @@ export default class ProductProvider extends Component {
             handleDetail: this.handleDetail,
             addToCart: this.addToCart,
             openModel: this.openModel,
-            closeModel: this.closeModal,
+            closeModal: this.closeModal,
+            increment: this.increment,
+            decrement: this.decrement,
+            removeItem: this.removeItem,
+            clearCart: this.clearCart,
           }}
         >
           {this.props.children}
