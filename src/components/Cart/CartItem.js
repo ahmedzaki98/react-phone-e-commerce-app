@@ -18,7 +18,7 @@ const CartItem = ({ item, value }) => {
         {title}
       </div>
       <div className="col-10 mx-auto col-lg-2">
-        <span className="d-lg-none">Price: </span>
+        <span className="d-lg-none">Price: $ </span>
         {price}
       </div>
       <div className="col-10 mx-auto col-lg-2 my-2 my-lg-0">
@@ -39,7 +39,10 @@ const CartItem = ({ item, value }) => {
         </div>
       </div>
       <div className="col-10 mx-auto col-lg-2">
-        <div className="cart-icon text-yellow h5" onClick={() => removeItem(id)}>
+        <div
+          className="cart-icon text-yellow h5"
+          onClick={() => removeItem(id)}
+        >
           <i className="fas fa-trash"></i>
         </div>
       </div>
