@@ -85,11 +85,12 @@ const Product = ({ product }) => {
                 disabled={inCart ? true : false}
                 onClick={() => {
                   value.addToCart(id);
+                  value.openModel(id);
                 }}
               >
                 {inCart ? (
                   <p className="text-capitalize mb-0" disabled>
-                    in Card
+                    in Cart
                   </p>
                 ) : (
                   <i className="fas fa-cart-plus"></i>
@@ -110,7 +111,7 @@ const Product = ({ product }) => {
     </ProductWrapper>
   );
 };
-export default Product;
+
 Product.propTypes = {
   product: PropTypes.shape({
     id: PropTypes.number,
@@ -120,3 +121,5 @@ Product.propTypes = {
     inCart: PropTypes.bool,
   }).isRequired,
 };
+
+export default Product;
