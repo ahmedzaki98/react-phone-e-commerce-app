@@ -3,6 +3,7 @@ import Title from "../ui/Title";
 import CartColumns from "./CartColumns";
 import EmptyCart from "./EmptyCart";
 import CartList from "./CartList";
+import CartTotals from "./CartTotals";
 import { ProductConsumer } from "../../context";
 
 const Cart = () => {
@@ -17,6 +18,7 @@ const Cart = () => {
                 <Title name="your" title="cart" />
                 <CartColumns />
                 <CartList value={value} />
+                <CartTotals value={value} />
               </React.Fragment>
             );
           } else {
