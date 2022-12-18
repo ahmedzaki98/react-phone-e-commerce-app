@@ -90,7 +90,7 @@ const Product = ({ product }) => {
               >
                 {inCart ? (
                   <p className="text-capitalize mb-0" disabled>
-                    in Cart
+                    <i class="fas fa-cart-arrow-down text-yellow"></i>
                   </p>
                 ) : (
                   <i className="fas fa-cart-plus"></i>

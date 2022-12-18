@@ -64,8 +64,8 @@ const EmptyCart = () => {
           <Title name="Your cart is" title="empty!" />
           <Link to="/">
             <ButtonWrapper>
-              <span class="label">start shopping</span>
-              <span class="icon">
+              <span className="label">start shopping</span>
+              <span className="icon">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
