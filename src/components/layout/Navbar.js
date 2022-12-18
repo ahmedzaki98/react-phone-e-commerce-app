@@ -59,7 +59,7 @@ const Navbar = () => {
             <Link to="/cart" style={{ marginLeft: "auto" }}>
               <ButtonContainer>
                 <SpanWrapper>
-                  <span><i class="fa badge fa-lg" value={counter}>
+                  <span><i className="fa badge fa-lg" value={counter}>
                     &#xf07a;
                   </i></span>
                 </SpanWrapper>
