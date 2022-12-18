@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 const ButtonWrapper = styled.button`
   position: relative;
   font-size: 14px;
+  font-family: "Oswald", sans-serif;
   letter-spacing: 3px;
   height: 3em;
   padding: 0 3em;
