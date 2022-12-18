@@ -1,7 +1,7 @@
 # Image Search Engine
 
 ## Description
-the project is a Phone E-Commerce that you can buy you favorite phone easy
+the project is a Phone E-Commerce that you can buy your favorite phone easy
 
 
 ## Techs:
