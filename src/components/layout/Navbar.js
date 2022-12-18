@@ -19,7 +19,7 @@ const NavWrapper = styled.nav`
 `;
 const SpanWrapper = styled.span`
   i {
-    max-width:0.9rem;
+    max-width: 0.9rem;
     margin-left: -1rem;
     margin-right: 1rem;
     color: var(--mainYellow);
@@ -40,6 +40,17 @@ const SpanWrapper = styled.span`
 `;
 
 const Navbar = () => {
+  const counterCheck = (value) => {
+    if (value === 0) {
+      return <i className="fa-solid fa-cart-shopping" style={{marginLeft: '1px'}}></i>;
+    } else {
+      return (
+        <i className="fa badge fa-lg" value={value}>
+          &#xf07a;
+        </i>
+      );
+    }
+  };
   return (
     <ProductConsumer>
       {(value) => {
@@ -59,9 +70,7 @@ const Navbar = () => {
             <Link to="/cart" style={{ marginLeft: "auto" }}>
               <ButtonContainer>
                 <SpanWrapper>
-                  <span><i className="fa badge fa-lg" value={counter}>
-                    &#xf07a;
-                  </i></span>
+                  <span>{counterCheck(counter)}</span>
                 </SpanWrapper>
                 <span> My cart</span>
               </ButtonContainer>
