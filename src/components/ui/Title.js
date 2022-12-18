@@ -6,7 +6,7 @@ const Title = ({ name, title }) => {
       <div className="col-10 mx-auto text-center text-title">
         <h1 className="text-blue text-capitalize font-weight-bold">
           {name}
-          <strong className="text-grid">{title}</strong>
+          <strong className="text-grid mx-2">{title}</strong>
         </h1>
       </div>
     </div>
