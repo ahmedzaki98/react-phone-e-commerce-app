@@ -60,7 +60,7 @@ const EmptyCart = () => {
     <div className="container mt-5">
       <div className="row">
         <div className="col-10 mx-auto text-center text-title">
-          <img className="mb-3 mt-0" src={Logo} alt="logo" />
+          <img className="mb-3 mt-0 mx-auto d-flex img-fluid" src={Logo} alt="logo" />
           <Title name="Your cart is" title="empty!" />
           <Link to="/">
             <ButtonWrapper>
