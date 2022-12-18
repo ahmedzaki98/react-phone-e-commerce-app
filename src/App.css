@@ -25,17 +25,37 @@ body {
   color: var(--lightBlue);
 }
 
-.text-yellow{
+.text-yellow {
   color: var(--mainYellow);
-  border-color: #fdbd01 !important;
+  border-color: #fdbd01;
 }
 
 .text-grid {
-  background: -webkit-linear-gradient(
-    315deg,
-    #ffa400,
-    #fdbd01 100%
-  );
+  background: -webkit-linear-gradient(315deg, #ffa400, #fdbd01 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.icon-btn {
+  width: 40px;
+  height: 40px;
+  border: 0.1rem solid darkorange;
+  background: white;
+  border-radius: 25px;
+  overflow: hidden;
+  position: relative;
+  transition: width 0.2s ease-in-out;
+  font-weight: 500;
+  font-family: inherit;
+}
+
+.icon-btn i {
+  color: var(--mainYellow);
+}
+.icon-btn:hover i{
+  color: white;
+}
+.icon-btn:hover {
+  border: 0.1rem solid white;
+  background: var(--lightBlue);
 }
