@@ -3,6 +3,8 @@
 ## Description
 the project is a Phone E-Commerce that you can buy your favorite phone easy
 
+### [Live Site](https://react-phone-store01.netlify.app/)
+
 
 ## Techs:
 1. HTML5
