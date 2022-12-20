@@ -4,6 +4,7 @@
 the project is a Phone E-Commerce that you can buy your favorite phone easy
 
 ### [Live Site](https://react-phone-store01.netlify.app/)
+![image](https://user-images.githubusercontent.com/55949920/208682519-a3855348-2d4e-4746-a095-b9897182a3c6.png)
 
 
 ## Techs:
